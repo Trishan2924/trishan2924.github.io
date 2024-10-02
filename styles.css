@@ -24,13 +24,13 @@ nav ul li {
 }
 
 nav a {
-    color: #fff;
+    color: #ffeb3b; /* Change the default link color to yellow */
     text-decoration: none;
     transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #ffeb3b;
+    color: #fff; /* Change link color to white on hover */
 }
 
 main {
@@ -45,6 +45,15 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+section a {
+    color: #ffeb3b; /* Set link color to yellow within sections */
+    text-decoration: underline; /* Add underline for visibility */
+}
+
+section a:hover {
+    color: #fff; /* Set link color to white on hover within sections */
+}
+
 h2 {
     color: #ffeb3b;
 }
@@ -57,4 +66,13 @@ footer {
     width: 100%;
     bottom: 0;
     color: #fff;
+}
+
+footer a {
+    color: #ffeb3b; /* Change link color in footer to yellow */
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #fff; /* Change link color to white on hover in footer */
 }
