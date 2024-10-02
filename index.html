@@ -3,73 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Game Development Portfolio</title>
+    <title>My Game Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-color: #f4f4f4;
             color: #333;
         }
         header {
-            background-color: #007bff;
-            color: white;
-            padding: 20px;
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
             text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #ffffff;
+            text-decoration: none;
         }
         section {
-            margin: 20px;
             padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            color: #007bff;
-        }
-        .contact-info {
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #007bff;
-            color: white;
-            border-radius: 5px;
-            text-align: center;
         }
         footer {
             text-align: center;
-            padding: 10px;
-            background-color: #007bff;
-            color: white;
-            position: fixed;
+            padding: 10px 0;
+            background: #35424a;
+            color: #ffffff;
+            position: absolute;
             bottom: 0;
             width: 100%;
+        }
+        .contact {
+            margin-top: 20px;
+        }
+        .contact a {
+            color: #35424a;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Game Development Portfolio</h1>
-        <p>Explore my projects and skills!</p>
+        <h1>Welcome to My Game Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
-    
-    <section>
+
+    <section id="about">
         <h2>About Me</h2>
-        <p>I'm a passionate game developer specializing in Unity and innovative game design. Check out my work and feel free to reach out!</p>
+        <p>I am a game developer specializing in Unity development. I enjoy creating immersive gaming experiences.</p>
     </section>
 
-    <section>
+    <section id="projects">
         <h2>My Projects</h2>
-        <p>Details about your projects will go here. You can include links to your games on itch.io or descriptions of your work.</p>
+        <p>Check out my latest games on platforms like itch.io.</p>
     </section>
 
-    <div class="contact-info">
+    <section id="contact" class="contact">
         <h2>Contact Me</h2>
-        <p>Discord: <a href="https://discord.gg/WpYqKgW8" style="color: white;">Join me here!</a></p>
-    </div>
+        <p>Feel free to reach out:</p>
+        <p>Discord: <a href="https://discord.gg/WpYqKgW8" target="_blank">Join my Discord</a></p>
+        <p>Email: <a href="mailto:trroyroddur@gmail.com">trroyroddur@gmail.com</a></p>
+    </section>
 
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2024 My Game Portfolio</p>
     </footer>
 </body>
 </html>
+
