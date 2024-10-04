@@ -1,37 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Beneath the Grave</title>
-</head>
-<body>
-    <header>
-        <h1>Beneath the Grave</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Back to Home</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section id="game-details">
-            <h2>About the Game</h2>
-            <p>Beneath the Grave is an engaging FPS game with stunning graphics and unique weapons. Dive into a world full of challenges and exciting gameplay!</p>
-            
-            <h3>Price: $10.00</h3>
-            <p>To purchase the game, please follow these instructions:</p>
-            <ol>
-                <li>Send BDT 1,000 to my bKash account.</li>
-                <li>Once the payment is confirmed, send me your email address to receive the game link.</li>
-            </ol>
-        </section>
-    </main>
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+}
 
-    <footer>
-        <p>&copy; 2024 Trishan. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #ffeb3b; /* Change the default link color to yellow */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #fff; /* Change link color to white on hover */
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    color: #ffeb3b;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    color: #fff;
+}
