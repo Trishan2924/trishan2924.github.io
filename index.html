@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Trishan Games</title>
+    <script>
+        function showDownloadLink() {
+            var transactionID = document.getElementById("transactionID").value;
+            
+            if (transactionID !== "") {
+                document.getElementById("downloadLink").style.display = "block";
+            } else {
+                alert("Please enter a valid Transaction ID.");
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -26,10 +37,24 @@
             <h4>Price: BDT 1,000</h4>
             <p>To purchase the game, please follow these instructions:</p>
             <ol>
-                <li>Send BDT 1,000 to my bKash account (Number: 01737109686).</li>
-                <li>Once the payment is confirmed, send me your email address on Discord or via email to receive the download link.</li>
+                <li>Click the button below to open the bKash payment page:</li>
+                <li>
+                    <a href="https://bkash.com/sendmoney?receiver=01737109686&amount=1000" target="_blank" class="button">Pay with bKash</a>
+                </li>
+                <li>After the payment, copy your Transaction ID from the bKash confirmation message.</li>
+                <li>Enter the Transaction ID below to get the download link.</li>
             </ol>
-            <p>Download Link (will be sent after purchase): <a href="https://drive.google.com/uc?export=download&id=1IjSwdlrQUxeffwamsbGJfmGlyLwy2oQY" target="_blank">Download Game</a></p>
+            
+            <!-- Input field for Transaction ID -->
+            <input type="text" id="transactionID" placeholder="Enter Transaction ID here" style="margin-bottom: 10px;">
+            <button onclick="showDownloadLink()" class="button">Submit Transaction ID</button>
+            
+            <!-- Download link section (hidden by default) -->
+            <div id="downloadLink" style="display: none;">
+                <h4>Download Link</h4>
+                <p>Thank you for your purchase! Click the link below to download the game:</p>
+                <a href="https://drive.google.com/uc?export=download&id=1IjSwdlrQUxeffwamsbGJfmGlyLwy2oQY" target="_blank">Download Beneath the Grave</a>
+            </div>
         </section>
 
         <section id="contact">
